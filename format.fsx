@@ -10,12 +10,14 @@ open Fake.FileHelper
 let source = "src/md"
 let resource = "resource"
 let template = "src/html/template.html"
+let indexTemplate = "src/html/indexTemplate.html"
+let index = "src/md/index.md"
 let output= "release"
 
 let format() =
-    let doc = Path.Combine(source, "hello.md")
-    Literate.ProcessDirectory(source, template, "release")
-
+    CleanDir output
+    Literate.ProcessMarkdown(index, indexTemplate, sprintf "%s/index.html" output)
+    Literate.ProcessDirectory(source, template, output)
 let deploy() =
     CopyDir output resource (fun x -> true)
 
