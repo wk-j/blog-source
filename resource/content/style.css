@@ -53,7 +53,12 @@ pre a.fssniplink
 }
 
 table {
-	width:100%;
+	/*width:100%;*/
+}
+
+/* wk */
+h1 {
+	margin-bottom: 30px;
 }
 
 /* Optionally, also configure how the PRE element and TABLE.PRE look */
@@ -77,7 +82,7 @@ table.pre td.lines {
   border-bottom-right-radius:0px;
   border-right-style: none;
   padding-right:0px;
-  width:25px;
+  /*width:25px;*/
 }
 table.pre td.snippet {
   border-top-left-radius:0px;

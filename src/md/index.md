@@ -2,13 +2,6 @@
 Slow Day Stay Home
 ==================
 
-- [Hello](2015-11/hello.html) - 2015-11-17
-- [Hello](2015-11/hello.html) - 2015-11-17
-
-```
-class Test {
-    public static void main(String[] args) {
-        System.out.println("Hello, world!")
-    }
-}
-```
+- [Lambda expressions](2015-11/hello.html) - 2015-11-17
+- [Let's start with a simple example of how to sort a list](2015-11/hello.html) - 2015-11-17
+- [Kotlin Extension Method](2015-11/kolin-extension-method.html) - งงเลยครับพี่น้อง
