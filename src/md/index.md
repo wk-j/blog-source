@@ -2,6 +2,5 @@
 Slow Day Stay Home
 ==================
 
-- [Lambda expressions](2015-11/hello.html) - 2015-11-17
-- [Let's start with a simple example of how to sort a list](2015-11/hello.html) - 2015-11-17
-- [Kotlin Extension Method](2015-11/kolin-extension-method.html) - งงเลยครับพี่น้อง
+- 2015.11.17 - [สร้างบล๊อกด้วย FSharp.Formatting](2015-11/build-blog-with-fsharp-formatting.html)
+- 0000.00.00 - [Hello](0000-00/hello.html)
