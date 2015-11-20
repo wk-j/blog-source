@@ -1,3 +1,4 @@
+[Home](/blog)
 
 Update ไฟล์ Xml ด้วย PowerShell
 =============================
@@ -9,10 +10,11 @@ Update ไฟล์ Xml ด้วย PowerShell
 ```
 function UpdateAppSetting($xml, $key, $value) {
     $field = $xml.Configuration.AppSettings.Add | where ${_.Key -eq $key}
-    if(![Object]::ReferenceEquals($field, $null)) {
+    if([Object]::ReferenceEquals($field, $null)) {
         $el = $xml.CreateElement("add")
         $el.SetAttribute("key", $key)
         $el.SetAttribute("value", $value.ToString())
+        $xml.Configuration.AppSettings.AppendChild($el)
     }else {
         $field.Value = $value.ToString()
     }
